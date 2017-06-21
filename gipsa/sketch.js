@@ -18,13 +18,23 @@ function setup() {
 
 function draw() {
   background(img);
+  textSize(round(imgWidth/zoomLevel/2));
+  textAlign(CENTER, CENTER);
 
   noFill();
   stroke(255, 120, 0);
   rect(x_left, y_top, round(squareSize), round(squareSize));
+  fill(255, 120, 0)
+  text('1', x_left + round(squareSize/2), y_top + round(squareSize/2))
 
   stroke(255, 0, 0);
+  fill(255, 0, 0)
   line(round(imgWidth/2), 0, round(imgWidth/2), imgHeight);
+
+  text('2', round(imgWidth/4), round(imgHeight/4));
+  text('3', 3 * round(imgWidth/4), round(imgHeight/4));
+  text('4', round(imgWidth/4), 3 * round(imgHeight/4));
+  text('5', 3 * round(imgWidth/4), 3 * round(imgHeight/4));
   line(0, round(imgHeight/2), imgWidth, round(imgHeight/2));
 
   if (mouseIsPressed) {
