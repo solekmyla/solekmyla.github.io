@@ -4,17 +4,17 @@
 Template Name: Marqa
 Description: Responsive HTML5 / CSS3 One-Page Portfolio-Resume Template
 Version: 1.2
-Author: Ahmed Beheiry 
+Author: Ahmed Beheiry
 URL: https://themeforest.net/user/ahmedbeheiry
 
 /* ---------------------------------------------------
 	*** Table Of Content:
 -----------------------------------------------------
 1 - Loading Page
-2 - Launching and adjusting NiceScroll plugin 
+2 - Launching and adjusting NiceScroll plugin
 3 - Move to About section on clicking mouse icon
-4 - Adjusting the top nav Visibility 
-5 - Adjusting Side Menu showing / hiding 
+4 - Adjusting the top nav Visibility
+5 - Adjusting Side Menu showing / hiding
 6 - Scroll Percentage
 7 - Accordion in About-me Section
 8 - Back To Top Button
@@ -31,14 +31,14 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	"use strict";
 
 	/* ---------------------------------------------------
-		1 - Loading Page 
+		1 - Loading Page
 	----------------------------------------------------- */
 	$(window).on("load", function() {
 		$(".loading").delay(1000).addClass("loaded");
 	});
 
 	/* ---------------------------------------------------
-		2 - Launching and adjusting NiceScroll plugin 
+		2 - Launching and adjusting NiceScroll plugin
 	----------------------------------------------------- */
 	$("html, body").niceScroll({
 		scrollspeed: 40,
@@ -51,7 +51,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	});
 
 	/* ---------------------------------------------------
-		3 - Move to About section on clicking mouse icon 
+		3 - Move to About section on clicking mouse icon
 	----------------------------------------------------- */
 	$("#mouse").on("click", function() {
 		$("html, body").animate({
@@ -60,7 +60,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	});
 
 	/* ---------------------------------------------------
-		4 - Adjusting the top nav Visibility 
+		4 - Adjusting the top nav Visibility
 	----------------------------------------------------- */
 	// the top nav get visible when scrolling >= 600
 	$(window).on("scroll", function() {
@@ -73,7 +73,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	});
 
 	/* ---------------------------------------------------
-		5 - Adjusting Side Menu showing / hiding 
+		5 - Adjusting Side Menu showing / hiding
 	----------------------------------------------------- */
 	// When clicking on the menu button
 	$("#menu").on("click", function() {
@@ -81,7 +81,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 		$("#side-menu").toggleClass("active-side-menu").children("a").removeClass("selected-item");
 	});
 
-	// some styles on menu item when clicked 
+	// some styles on menu item when clicked
 	$("#side-menu a").on("click", function() {
 		$(this).addClass("selected-item").siblings().removeClass("selected-item");
 		$("#menu").toggleClass("active-menu");
@@ -122,7 +122,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	});
 
 	/* ---------------------------------------------------
-		7 - Accordion in About-me Section 
+		7 - Accordion in About-me Section
 	----------------------------------------------------- */
 	$(".acc-title").on("click", function() {
 		$(".acc-title").not(this).removeClass("active");
@@ -134,7 +134,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	/* ---------------------------------------------------
 		8 - Back To Top Button
 	----------------------------------------------------- */
-	// showing the button when scroll > 400 
+	// showing the button when scroll > 400
 	var backToTop = $(".back-to-top");
 	$(window).on("scroll", function() {
 		if ($(this).scrollTop() >= 400) {
@@ -152,14 +152,14 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	});
 
 	/* ---------------------------------------------------
-		9 - Animating Numbers at Fun-Facts Section 
+		9 - Animating Numbers at Fun-Facts Section
 	----------------------------------------------------- */
 	$("#facts").appear(function() {
 		$("#number_1").animateNumber({
-			number: 6853	// Change to your number			
+			number: 6853	// Change to your number
 		}, 2200);
 		$("#number_2").animateNumber({
-			number: 120		// Change to your number	
+			number: 120		// Change to your number
 		}, 2200);
 		$("#number_3").animateNumber({
 			number: 345		// Change to your number
@@ -220,7 +220,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 		dots: false,
 		dotsEach: false,
 		autoplay: true,
-		autoplayTimeout: 4000,
+		autoplayTimeout: 12000,
 		autoplayHoverPause: true,
 		responsive: {
 			0: {
@@ -278,7 +278,7 @@ URL: https://themeforest.net/user/ahmedbeheiry
 			var name = $("#name").val(),
 				mail = $("#mail").val(),
 				message = $("#message").val();
-			// Ajax    
+			// Ajax
 			$.ajax({
 				type: "POST",
 				url: "php/contact.php",
@@ -328,7 +328,7 @@ function init() {
 
 		scrollwheel: false,
 
-		// How you would like to style the map. 
+		// How you would like to style the map.
 		// This is where you would paste any style found on Snazzy Maps.
 		styles: [{
 			"featureType": "all",
@@ -443,7 +443,7 @@ function init() {
 		}]
 	};
 
-	// Get the HTML DOM element that will contain your map 
+	// Get the HTML DOM element that will contain your map
 	// We are using a div with id="map" seen below in the <body>
 	var mapElement = document.getElementById("map");
 
