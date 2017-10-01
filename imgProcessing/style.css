@@ -1,0 +1,48 @@
+/* ---------------------------------------
+			Start Main Rules
+----------------------------------------- */
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin: 0px;
+	color: #333;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #555;
+	font-weight: 300;
+	letter-spacing: 1.2px;
+}
+a, a:hover, a:focus {color: #fff; text-decoration: none;}
+button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, textarea,textarea:active, textarea:focus {outline: none;}
+.h2 {
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	margin: 0 auto;
+	letter-spacing: 1.2px;
+}
+/* End Main Rules */
+
+
+/* ---------------------------------------
+			Navigation Bar Rules
+----------------------------------------- */
+
+.header {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.canvasBorder {
+  margin: 10;
+}
+
+/* End Navigation Bar*/
