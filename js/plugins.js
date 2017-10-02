@@ -156,10 +156,10 @@ URL: https://themeforest.net/user/ahmedbeheiry
 	----------------------------------------------------- */
 	$("#facts").appear(function() {
 		$("#number_1").animateNumber({
-			number: 6853	// Change to your number
+			number: 9653	// Change to your number
 		}, 2200);
 		$("#number_2").animateNumber({
-			number: 120		// Change to your number
+			number: 1342		// Change to your number
 		}, 2200);
 		$("#number_3").animateNumber({
 			number: 345		// Change to your number
@@ -188,16 +188,16 @@ URL: https://themeforest.net/user/ahmedbeheiry
 
 		// start numbers animate at skills section //
 		$("#chart_num_1").animateNumber({
-			number: 88		// Change to your number
+			number: 85		// Change to your number
 		}, 1500);
 		$("#chart_num_2").animateNumber({
-			number: 95		// Change to your number
+			number: 90		// Change to your number
 		}, 1500);
 		$("#chart_num_3").animateNumber({
-			number: 73		// Change to your number
+			number: 85		// Change to your number
 		}, 1500);
 		$("#chart_num_4").animateNumber({
-			number: 55		// Change to your number
+			number: 80		// Change to your number
 		}, 1500);
 	}, {
 		accX: 0,
